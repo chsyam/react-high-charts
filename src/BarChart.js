@@ -308,7 +308,7 @@ const BarGraph = () => {
                 point: {
                     events: {
                         click: function () {
-                            setCategoryName(this.name)
+                            categoryName === "" && setCategoryName(this.name)
                             handleClick(this.name)
                         },
                     },

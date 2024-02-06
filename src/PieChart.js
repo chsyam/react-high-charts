@@ -15,7 +15,7 @@ const PieChart = () => {
         ],
         [
             'v63.0',
-            53.02
+            51.02
         ],
         [
             'v62.0',
@@ -308,7 +308,7 @@ const PieChart = () => {
                 point: {
                     events: {
                         click: function () {
-                            setCategoryName(this.name)
+                            categoryName === "" && setCategoryName(this.name)
                             handleClick(this.name)
                         },
                     },
